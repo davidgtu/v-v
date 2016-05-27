@@ -18,6 +18,12 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $('.circle').click(function(){
+      $('html, body').animate({
+        scrollTop: $("#second-section").offset().top
+       }, 1000);
+    })
 });
 
 
